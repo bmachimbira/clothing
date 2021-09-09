@@ -271,7 +271,8 @@
 														<h5 class="mb-0 ms-auto">$189.00</h5>
 													</div>
 												</a>
-												<div class="d-grid p-3 border-top">	<a href="javascript:;" class="btn btn-dark btn-ecomm">CHECKOUT</a>
+												<div class="d-grid p-3 border-top">	<a onClick="performClick('500');" class="btn btn-dark btn-ecomm" >CHECKOUT</a>
+
 												</div>
 											</div>
 										</li>
@@ -616,6 +617,11 @@
 	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
 	<!--app JS-->
 	<script src="assets/js/app.js"></script>
+<script type="text/javascript">
+		function performClick(amount) {
+			makePayment.performClick(amount);
+		}
+	</script>
 </body>
 
 </html>
